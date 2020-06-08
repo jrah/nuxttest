@@ -1,0 +1,416 @@
+{
+  "Page": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "unique-identifier-eg-homepage"
+      }
+    },
+    "heading": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Heading"
+      }
+    },
+    "paragraph": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, hyperlink",
+        "allowTargetBlank": true,
+        "label": "Paragraph"
+      }
+    },
+    "collection": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "rich_text": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, preformatted, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+              "allowTargetBlank": true,
+              "label": "Rich Text"
+            }
+          }
+        },
+        "label": "collection"
+      }
+    },
+    "header_type": {
+      "type": "Select",
+      "config": {
+        "options": ["carousel", "static"],
+        "default_value": "carousel",
+        "label": "Header Type"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "card_block": {
+            "type": "Slice",
+            "fieldset": "Card Block",
+            "description": "Cards, similar to feature block",
+            "icon": "assessment",
+            "display": "grid",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "heading",
+                  "single": "heading2"
+                }
+              },
+              "type": {
+                "type": "Select",
+                "config": {
+                  "label": "type",
+                  "default_value": "aesthetic",
+                  "options": ["aesthetic", "informative", "horizontal"]
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "background color"
+                }
+              },
+              "font_color": {
+                "type": "Select",
+                "config": {
+                  "label": "font color",
+                  "default_value": "light",
+                  "options": ["light", "dark"]
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {
+                    "width": 144
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "small",
+                      "width": 144,
+                      "height": null
+                    },
+                    {
+                      "name": "medium",
+                      "width": 144,
+                      "height": null
+                    },
+                    {
+                      "name": "large",
+                      "width": 240,
+                      "height": null
+                    }
+                  ]
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "heading",
+                  "single": "heading3"
+                }
+              },
+              "content": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "content",
+                  "multi": "paragraph, preformatted, heading4, heading5, heading6, strong, em, hyperlink, embed, list-item, o-list-item, o-list-item"
+                }
+              },
+              "button_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "allowTargetBlank": true
+                }
+              },
+              "button_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Text"
+                }
+              }
+            }
+          },
+          "logo_cloud": {
+            "type": "Slice",
+            "fieldset": "Logo Cloud",
+            "description": "Content model for Cloud Logo",
+            "icon": "thumb_up",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "heading"
+                }
+              },
+              "slice_type": {
+                "type": "Select",
+                "config": {
+                  "options": ["default"],
+                  "default_value": "default",
+                  "label": "Slice variation"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Heading"
+                }
+              },
+              "paragraph": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "Paragraph"
+                }
+              }
+            }
+          },
+          "cta_section": {
+            "type": "Slice",
+            "fieldset": "CTA Section",
+            "description": "Content model for CTA Section",
+            "icon": "thumb_up",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "heading"
+                }
+              },
+              "slice_type": {
+                "type": "Select",
+                "config": {
+                  "options": ["default"],
+                  "default_value": "default",
+                  "label": "Slice variation"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Heading"
+                }
+              },
+              "paragraph": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "Paragraph"
+                }
+              }
+            }
+          },
+          "feature_block": {
+            "type": "Slice",
+            "fieldset": "Feature Block",
+            "description": "Content model for Feature Block",
+            "icon": "thumb_up",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "heading"
+                }
+              },
+              "slice_type": {
+                "type": "Select",
+                "config": {
+                  "options": ["default"],
+                  "default_value": "default",
+                  "label": "Slice variation"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Heading"
+                }
+              },
+              "paragraph": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "Paragraph"
+                }
+              }
+            }
+          },
+          "stats": {
+            "type": "Slice",
+            "fieldset": "Stats",
+            "description": "Content model for Stats",
+            "icon": "thumb_up",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "heading"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "rich_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true,
+                  "label": "Rich Text"
+                }
+              }
+            }
+          },
+          "carousel_slide": {
+            "type": "Slice",
+            "fieldset": "CarouselSlide",
+            "description": "Content model for CarouselSlide",
+            "icon": "thumb_up",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "heading"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "rich_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true,
+                  "label": "Rich Text"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "SEO Metadata": {
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title",
+        "placeholder": "My title for Search Engine"
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description",
+        "placeholder": "The description that will appear in search engine"
+      }
+    },
+    "social_cards": {
+      "type": "Group",
+      "config": {
+        "label": "Social Cards - Facebook & Twitter",
+        "fields": {
+          "social_card_image": {
+            "type": "Image",
+            "config": {
+              "label": "Social Card Image",
+              "constraint": {},
+              "thumbnails": []
+            }
+          },
+          "social_card_title": {
+            "type": "Text",
+            "config": {
+              "label": "Social Card TItle"
+            }
+          },
+          "social_card_description": {
+            "type": "Text",
+            "config": {
+              "label": "Social card description"
+            }
+          }
+        }
+      }
+    }
+  }
+}
