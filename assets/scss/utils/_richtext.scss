@@ -1,0 +1,30 @@
+@import '~assets/scss/mixins';
+
+.rich-text {
+  h2 {
+    @include mq(sm) {
+      @apply text-6xl;
+    }
+    @apply text-2xl;
+    @apply font-display;
+    @apply font-bold;
+    @apply mb-3;
+  }
+  a {
+    @apply inline-block;
+    @apply my-6;
+    @apply text-sm;
+    @apply bg-white;
+    @apply text-gray-800;
+    // @apply font-semibold;
+    @apply py-2;
+    @apply px-4;
+    // @apply border;
+    // @apply border-gray-400;
+    @apply rounded-full;
+    // @apply shadow;
+    &:hover {
+      @apply bg-gray-300;
+    }
+  }
+}

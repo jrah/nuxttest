@@ -1,0 +1,113 @@
+{
+  "Navigation": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Navigation Menu",
+        "placeholder": "Menu",
+        "useAsTitle": true
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "1st_level": {
+            "type": "Slice",
+            "fieldset": "Link",
+            "description": "Nav item",
+            "icon": "filter_1",
+            "display": "list",
+            "non-repeat": {
+              "nav_link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "Nav Link"
+                }
+              },
+              "link_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Link Text",
+                  "placeholder": "Link text..."
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "Social": {
+    "social_media": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 150,
+                "height": 150
+              },
+              "thumbnails": [],
+              "label": "Social Media Icon"
+            }
+          },
+          "link": {
+            "type": "Link",
+            "config": {
+              "label": "link"
+            }
+          }
+        },
+        "label": "social media"
+      }
+    }
+  },
+  "Supplementary": {
+    "meta": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, strong, em, hyperlink, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Meta"
+      }
+    },
+    "footer_links": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "1st_level": {
+            "type": "Slice",
+            "fieldset": "Link",
+            "description": "Nav item",
+            "icon": "filter_1",
+            "display": "list",
+            "non-repeat": {
+              "nav_link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "Nav Link"
+                }
+              },
+              "link_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Link Text",
+                  "placeholder": "Link text..."
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}
