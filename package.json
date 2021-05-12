@@ -21,7 +21,7 @@
     "nuxt-webfontloader": "^1.1.0",
     "prismic-javascript": "^2.7.1",
     "prismic-vue": "^2.0.1",
-    "swiper": "^5.4.1",
+    "swiper": "^6.5.1",
     "test_module": "jrah/test_module#a7c138c",
     "vue-awesome-swiper": "^4.1.1",
     "vue-essential-slices": "jrah/vue-essential-slices",
